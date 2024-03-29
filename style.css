@@ -206,7 +206,7 @@ nav label {
   background-image: url(./images/shadow-bg.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  /* padding-bottom: 43px; */
+  padding-bottom: 43px;
   margin-bottom: 100px;
   background-size: 100%;
 }
@@ -418,6 +418,60 @@ nav label {
   margin-top: 100px;
 }
 
+.section-7 > h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.section-7 > p {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.article {
+  max-width: 348px;
+}
+
+.article img {
+  margin-bottom: 24px;
+  max-width: 350px;
+}
+
+.article span {
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.article h2 {
+  font-size: 24px;
+}
+
+.article:nth-of-type(2) img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.article:nth-of-type(2) h2 {
+  color: var(--main-color);
+}
+
+.article:nth-of-type(3) img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (max-width: 380px) {
+  .article img {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .section-2 {
     padding-bottom: 60px;
@@ -448,6 +502,21 @@ nav label {
 
   .section-5 {
     margin-top: 125px;
+  }
+
+  .section-7 {
+    text-align: center;
+  }
+
+  .article-container {
+    align-items: center;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -610,5 +679,63 @@ nav label {
 
   .chat-container {
     padding: 0 140px;
+  }
+
+  .section-7 {
+    text-align: left;
+  }
+
+  .article h2,
+  .article span {
+    padding-left: 24px;
+  }
+
+  .article {
+    align-items: normal;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 10px;
+  }
+
+  .article-container {
+    flex-direction: row;
+  }
+
+  .article-container {
+    justify-content: space-between;
+  }
+
+  .circles-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+  }
+
+  .circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: relative;
+  }
+
+  .circle::after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #efefef;
+    position: absolute;
+    left: 25px;
+  }
+
+  .circle::before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #efefef;
+    position: absolute;
+    right: 25px;
   }
 }
