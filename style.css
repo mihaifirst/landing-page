@@ -168,7 +168,7 @@ nav label {
   margin: 0 10px;
 }
 
-.Title {
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -448,6 +448,7 @@ nav label {
 .article-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -490,15 +491,18 @@ nav label {
   text-align: center;
 }
 
-.section-8 > h2 {
+.title {
+  margin-bottom: 74px;
+}
+
+.title > h2 {
   margin-bottom: 8px;
 }
 
-.section-8 > span {
+.title > span {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 74px;
 }
 
 .section-8 .article-container {
@@ -613,11 +617,11 @@ nav label {
   text-align: center;
 }
 
-.section-9 .Title > h2 {
+.section-9 .title > h2 {
   margin-bottom: 8px;
 }
 
-.section-9 .Title > p {
+.section-9 .title > p {
   line-height: 28px;
   margin-bottom: 32px;
   max-width: 540px;
@@ -636,10 +640,6 @@ nav label {
 
 .stars ~ p {
   text-align: left;
-}
-
-.section-9 .article-container {
-  align-items: center;
 }
 
 .container {
