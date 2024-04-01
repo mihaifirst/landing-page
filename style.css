@@ -975,6 +975,7 @@ nav label {
   .section-2 .content-container .items-wrapper {
     text-align: left;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .section-2 .content-container .items-wrapper .item .img {
