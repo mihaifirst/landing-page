@@ -1178,4 +1178,15 @@ nav label {
     bottom: 15px;
     left: 40px;
   }
+
+  .article-information,
+  .article,
+  .container {
+    transition: all 150ms ease-in-out;
+  }
+  .article-information:hover,
+  .article:hover,
+  .container:hover {
+    transform: scale(1.05);
+  }
 }
