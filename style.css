@@ -234,7 +234,9 @@ nav label {
 
 .section-2 h2 {
   font-size: 32px;
+  margin: 0 auto;
   margin-bottom: 50px;
+  max-width: 530px;
 }
 
 .section-2 .items-wrapper {
@@ -357,17 +359,25 @@ nav label {
   padding-top: 52px;
   background-size: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section-6 > p {
+.text-info > p {
   font-weight: 500;
   margin-bottom: 40px;
+  max-width: 540px;
 }
 
 .chat-section .message {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+}
+
+.section-6 .chat-container {
+  width: 100%;
 }
 
 .chat-section .message:nth-child(even) {
@@ -389,7 +399,7 @@ nav label {
   box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
   padding: 12px 20px;
   position: relative;
-  margin-left: 24px;
+  margin-left: 16px;
 }
 
 .chat-section .message:nth-child(even) span {
@@ -407,6 +417,7 @@ nav label {
   left: 32px;
   bottom: -8px;
 }
+
 .chat-section .message:nth-child(even) span::before {
   left: unset;
   right: 32px;
@@ -454,6 +465,9 @@ nav label {
 
 .article {
   max-width: 348px;
+  align-items: normal;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 10px;
 }
 
 .article img {
@@ -491,10 +505,6 @@ nav label {
   text-align: center;
 }
 
-.title {
-  margin-bottom: 74px;
-}
-
 .title > h2 {
   margin-bottom: 8px;
 }
@@ -509,17 +519,6 @@ nav label {
   gap: 32px;
   align-items: center;
   position: relative;
-}
-
-.section-8 .article-container::after {
-  content: "";
-  background-color: #bcd0e57f;
-  height: 1px;
-  position: absolute;
-  top: 150px;
-  left: 10px;
-  width: 80%;
-  z-index: -1;
 }
 
 .article-information:nth-child(2) {
@@ -617,6 +616,10 @@ nav label {
   text-align: center;
 }
 
+.section-9 .title {
+  margin-bottom: 32px;
+}
+
 .section-9 .title > h2 {
   margin-bottom: 8px;
 }
@@ -654,7 +657,7 @@ nav label {
 }
 
 .avatar {
-  width: 90px;
+  width: 50px;
   display: flex;
 }
 
@@ -726,6 +729,7 @@ nav label {
 .footer {
   margin-top: 100px;
   text-align: center;
+  padding-bottom: 45px;
 }
 
 .footer > span {
@@ -847,7 +851,8 @@ nav label {
     width: 90%;
   }
 
-  .section-5 {
+  .section-5,
+  .section-7 {
     margin-top: 125px;
   }
 
@@ -870,19 +875,30 @@ nav label {
     margin-top: 100px;
   }
 
+  .section-8 .article-container::after {
+    content: "";
+    background-color: #bcd0e57f;
+    height: 1px;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+    width: 100px;
+    z-index: -1;
+  }
+
   .article-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .section-8 .article-container::after {
-    display: none;
-  }
-
   .section-9,
   .footer {
     margin-top: 125px;
+  }
+
+  .section-9 .title {
+    margin-bottom: 50px;
   }
 
   .green-container {
@@ -903,6 +919,7 @@ nav label {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start;
   }
 }
 
@@ -934,6 +951,14 @@ nav label {
   .chat-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .chat-container .message:nth-child(2) {
+    justify-content: flex-start;
+  }
+
+  .chat-container .message:nth-child(3) {
+    justify-content: flex-end;
   }
 
   .chat-section .message {
@@ -973,6 +998,17 @@ nav label {
   nav {
     box-shadow: none;
   }
+
+  .section-8 .article-container::after {
+    content: "";
+    background-color: #bcd0e57f;
+    height: 1px;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+    width: 100px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1009,20 +1045,13 @@ nav label {
     max-width: 400px;
   }
 
-  .section-5 {
+  .section-5,
+  .section-7 {
     margin-top: 150px;
   }
 
   .chat-container {
     padding: 0 70px;
-  }
-
-  .chat-container .message:nth-child(2) {
-    justify-content: flex-start;
-  }
-
-  .chat-container .message:nth-child(3) {
-    justify-content: flex-end;
   }
 
   .section-6 > p {
@@ -1068,6 +1097,17 @@ nav label {
   .section-9,
   .footer {
     margin-top: 150px;
+  }
+
+  .section-8 .article-container::after {
+    content: "";
+    background-color: #bcd0e57f;
+    height: 1px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 800px;
+    z-index: -1;
   }
 }
 
