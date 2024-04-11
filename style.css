@@ -930,7 +930,8 @@ nav label {
     align-items: center;
   }
 
-  .two-columns .img {
+  .two-columns .img,
+  .chat-section .message {
     width: 50%;
   }
 
@@ -959,10 +960,6 @@ nav label {
 
   .chat-container .message:nth-child(3) {
     justify-content: flex-end;
-  }
-
-  .chat-section .message {
-    width: 50%;
   }
 
   .chat-section .message:nth-child(2),
