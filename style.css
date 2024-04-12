@@ -376,7 +376,8 @@ nav label {
   margin-bottom: 32px;
 }
 
-.section-6 .chat-container {
+.section-6 .chat-container,
+.chat-section .message .image img {
   width: 100%;
 }
 
@@ -387,10 +388,6 @@ nav label {
 .chat-section .message .image {
   width: 90px;
   flex-shrink: 0;
-}
-
-.chat-section .message .image img {
-  width: 100%;
 }
 
 .chat-section .message span {
